@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+        fixando o cabeçalho
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } */
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        /* a tag abaixo serve para deixar intercalado as cores em duas células
+        odd - impar - celula impar fica com essa config
+        even - par -                "
+        no lugar de odd pode colocar 2n-1 e no even 2n
+        */
+
+        tbody > tr:nth-child(odd) {
+            background-color: aqua;
+        
+        }
+        tbody > tr:nth-child(even){
+            background-color: brown;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>  
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            THEAD   
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th style="width: 60px;" scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi quam alias inventore sunt repellat fugit expedita facilis nobis! Debitis vel quia enim perferendis explicabo non fuga deserunt dolore aut!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate error eum reprehenderit illum officia ea quas recusandae dolorem, quibusdam sapiente laborum veniam odit ullam consequuntur voluptatibus non ratione minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit facilis tempora debitis provident possimus, earum fuga in ipsum, molestiae error eos sint dolores minus necessitatibus placeat aut a mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eaque porro rem harum veritatis ex maxime nemo. Vero quaerat ipsum magni expedita accusamus rem, itaque voluptas debitis dicta, ut velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea dolores molestias expedita explicabo, facere odio id libero dolor, voluptatibus earum ullam quia aut delectus ipsum fugit illum. Repellat, qui?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ullam labore earum dolores libero totam minus doloremque consequuntur autem. Pariatur, molestias! Iusto molestias, illo expedita maiores hic delectus unde dolores.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sapiente iusto. Inventore repellat eligendi voluptatibus totam ducimus culpa ipsum praesentium eius excepturi odit doloribus ab, sunt, magni est corrupti veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi quam alias inventore sunt repellat fugit expedita facilis nobis! Debitis vel quia enim perferendis explicabo non fuga deserunt dolore aut!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate error eum reprehenderit illum officia ea quas recusandae dolorem, quibusdam sapiente laborum veniam odit ullam consequuntur voluptatibus non ratione minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit facilis tempora debitis provident possimus, earum fuga in ipsum, molestiae error eos sint dolores minus necessitatibus placeat aut a mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eaque porro rem harum veritatis ex maxime nemo. Vero quaerat ipsum magni expedita accusamus rem, itaque voluptas debitis dicta, ut velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea dolores molestias expedita explicabo, facere odio id libero dolor, voluptatibus earum ullam quia aut delectus ipsum fugit illum. Repellat, qui?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ullam labore earum dolores libero totam minus doloremque consequuntur autem. Pariatur, molestias! Iusto molestias, illo expedita maiores hic delectus unde dolores.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sapiente iusto. Inventore repellat eligendi voluptatibus totam ducimus culpa ipsum praesentium eius excepturi odit doloribus ab, sunt, magni est corrupti veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi quam alias inventore sunt repellat fugit expedita facilis nobis! Debitis vel quia enim perferendis explicabo non fuga deserunt dolore aut!Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate error eum reprehenderit illum officia ea quas recusandae dolorem, quibusdam sapiente laborum veniam odit ullam consequuntur voluptatibus non ratione minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit facilis tempora debitis provident possimus, earum fuga in ipsum, molestiae error eos sint dolores minus necessitatibus placeat aut a mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eaque porro rem harum veritatis ex maxime nemo. Vero quaerat ipsum magni expedita accusamus rem, itaque voluptas debitis dicta, ut velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea dolores molestias expedita explicabo, facere odio id libero dolor, voluptatibus earum ullam quia aut delectus ipsum fugit illum. Repellat, qui?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ullam labore earum dolores libero totam minus doloremque consequuntur autem. Pariatur, molestias! Iusto molestias, illo expedita maiores hic delectus unde dolores.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sapiente iusto. Inventore repellat eligendi voluptatibus totam ducimus culpa ipsum praesentium eius excepturi odit doloribus ab, sunt, magni est corrupti veniam. </p>
+</body>
+</html>
